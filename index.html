@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    Hello Word
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <div id ="root"></div>
+    <script>
+        const Hello = React.createElement('div', null, 'Hello Tung')
+        const root = document.getElementById('root')
+        ReactDOM.render(Hello, root)
+    </script>
 </body>
 </html>
