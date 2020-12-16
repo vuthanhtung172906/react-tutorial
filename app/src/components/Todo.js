@@ -1,22 +1,21 @@
 import React from "react";
 
 import TodoItem from "./TodoItem"
-class Todo extends React.Component{
-    render(){
+function Todo(props) {
         return(
             <div>
                 <ul>
-                    {this.props.todos.map(todo => (
+                    {props.todos.map(todo => (
                         <TodoItem 
                         todo = {todo} 
-                        handle = {this.props.handle}
-                        deleteTodo = {this.props.deleteTodo}
+                        handle = {props.handle}
+                        deleteTodo = {props.deleteTodo}
                         />
                     ))}
                 </ul>
             </div>
         )
-    }
+    
 }
 
 export default Todo 
